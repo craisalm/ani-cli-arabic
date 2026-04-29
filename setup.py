@@ -22,6 +22,7 @@ if os.path.exists("requirements.txt"):
 setup(
     name="ani-cli-arabic",
     version="1.0.0",
+    # Forked from np4abdou1/ani-cli-arabic for personal use
     author="np4abdou1",
     author_email="",
     description="A CLI tool to browse and watch Arabic-dubbed anime from the terminal",
@@ -39,6 +40,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
         "Environment :: Console",
