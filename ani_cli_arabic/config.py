@@ -14,7 +14,7 @@ EPISODE_URL = f"{BASE_URL}/episode/"
 
 # Supported video qualities
 QUALITIES = ["1080p", "720p", "480p", "360p"]
-DEFAULT_QUALITY = "720p"
+DEFAULT_QUALITY = "1080p"  # personal preference: always prefer highest quality
 
 # Supported video players
 SUPPORTED_PLAYERS = {
@@ -44,7 +44,7 @@ HEADERS = {
 CACHE_DIR = Path(os.environ.get("XDG_CACHE_HOME", Path.home() / ".cache")) / APP_NAME
 CONFIG_DIR = Path(os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config")) / APP_NAME
 HISTORY_FILE = CONFIG_DIR / "history.json"
-CACHE_EXPIRY = 3600  # seconds (1 hour)
+CACHE_EXPIRY = 7200  # seconds (2 hours) - increased from 1 hour to reduce redundant requests
 
 # Search settings
 MAX_SEARCH_RESULTS = 20
